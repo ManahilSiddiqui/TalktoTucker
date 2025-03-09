@@ -26,9 +26,9 @@
   });
 
   // magnific popup
-  $('.gallery').each(function() { // the containers for all your galleries
+  $('.gallery').each(function() { 
       $(this).magnificPopup({
-          delegate: '.popup-image', // the selector for portfolio item
+          delegate: '.popup-image', 
           type: 'image',
           gallery: {
               enabled: true
