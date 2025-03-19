@@ -263,6 +263,7 @@ img {
 
 .filter .common-input::placeholder {
   color: #777777; /* Placeholder text color */
+  opacity: 1; /* Ensure placeholder is fully visible */
 }
 
 .filter .common-input:focus {
@@ -291,6 +292,25 @@ img {
 
 .filter .btn-main:active {
   transform: translateY(0); /* Reset lift effect on click */
+}
+
+/* Additional Styles for Better Alignment */
+.filter .row {
+  display: flex;
+  align-items: center; /* Vertically center the input and button */
+  gap: 10px; /* Add spacing between input and button */
+}
+
+.filter .col-lg-8,
+.filter .col-sm-8,
+.filter .col-xs-8 {
+  flex: 1; /* Allow the input to take up remaining space */
+}
+
+.filter .col-lg-4,
+.filter .col-sm-4,
+.filter .col-xs-4 {
+  flex: 0 0 auto; /* Prevent the button from stretching */
 }
 
 /* ------------------------------

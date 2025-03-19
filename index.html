@@ -60,53 +60,52 @@
 								<span>Forever Homes</span>
 								<h1>Your Story Starts Here</h1>
 								</ul>
+								<!-- Search Bar -->
+								<div class="col-lg-12">
+									<ul class="common-tab nav nav-pills" id="pills-tab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="nav-link active" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent" type="button" role="tab" aria-controls="pills-rent" aria-selected="true">Rent</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="false">Buy</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="nav-link" id="pills-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-sell" type="button" role="tab" aria-controls="pills-sell" aria-selected="false">Sell</button>
+										</li>
+									</ul>
+									<div class="tab-content" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab" tabindex="0">
+											<!-- Content for Rent tab -->
+										</div>
+										<div class="tab-pane fade" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab" tabindex="0">
+											<!-- Content for Buy tab -->
+										</div>
+										<div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab" tabindex="0">
+											<!-- Content for Sell tab -->
+										</div>
+									</div>
+									<div class="filter">
+										<form action="#" method="GET">
+											<div class="row gy-sm-4 gy-3 align-items-center">
+												<div class="col-lg-8 col-sm-8 col-xs-8"> <!-- Increased width for the search bar -->
+													<label for="search-keyword" class="visually-hidden">Enter Keyword</label>
+													<input type="text" id="search-keyword" name="keyword" class="common-input" placeholder="Enter Keyword">
+												</div>
+												<div class="col-lg-4 col-sm-4 col-xs-4 text-end"> <!-- Align button to the right -->
+													<button type="submit" class="btn btn-main w-100">Find Now</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
 							</div>
 						</div>
+						<!--end Search bar-->
 						<div class="col-md">
 							<div class="content-image">
 								<img src="img/intro.png" alt="intro">
 							</div>
 						</div>
-						<!-- Search Bar -->
-						<div class="col-lg-12">
-							<ul class="common-tab nav nav-pills" id="pills-tab" role="tablist">
-								<li class="nav-item" role="presentation">
-									<button class="nav-link active" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent" type="button" role="tab" aria-controls="pills-rent" aria-selected="true">Buy</button>
-								</li>
-								<li class="nav-item" role="presentation">
-									<button class="nav-link" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="false">Sell</button>
-								</li>
-								<li class="nav-item" role="presentation">
-									<button class="nav-link" id="pills-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-sell" type="button" role="tab" aria-controls="pills-sell" aria-selected="false">Rent</button>
-								</li>
-							</ul>
-							<div class="tab-content" id="pills-tabContent">
-								<div class="tab-pane fade show active" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab" tabindex="0">
-									<!-- Content for Rent tab -->
-								</div>
-								<div class="tab-pane fade" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab" tabindex="0">
-									<!-- Content for Buy tab -->
-								</div>
-								<div class="tab-pane fade" id="pills-sell" role="tabpanel" aria-labelledby="pills-sell-tab" tabindex="0">
-									<!-- Content for Sell tab -->
-								</div>
-							</div>
-							<div class="filter">
-								<form action="#" method="GET">
-									<div class="row gy-sm-4 gy-3">
-										<div class="col-lg-3 col-sm-6 col-xs-6">
-											<label for="search-keyword" class="visually-hidden">Address,neighborhoods,Area</label>
-											<input type="text" id="search-keyword" name="keyword" class="common-input" placeholder="Address,neighborhoods,Area">
-										</div>
-										<div class="col-lg-3 col-sm-6 col-xs-6">
-											<button type="submit" class="btn btn-main w-100">Search</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-							
-								<!--end Search bar-->
 					</div>
 				</div>
 			</div>
