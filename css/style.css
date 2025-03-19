@@ -248,6 +248,19 @@ img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.filter .common-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: #dddddd;
+  background: #2a2a2a; /* Darker background for the input field */
+  border: 2px solid #edcc36; /* Yellow border to match the theme */
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
 
 /* ------------------------------
   about
