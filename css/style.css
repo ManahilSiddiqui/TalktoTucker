@@ -8,10 +8,9 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
-  background: #090909;
+  background: #090909; /* Dark background for the rest of the page */
   color: #dddddd;
 }
-
 h1,
 h2,
 h3,
@@ -142,44 +141,22 @@ img {
   z-index: 99;
   padding: 0;
   text-align: center;
+  background: #090909; /* Dark background for the navbar */
 }
+
 .navbar .container {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #edcc36;
 }
-.navbar .navbar-brand {
-  text-align: left;
-  width: 18%;
-}
+
 .navbar .navbar-brand img {
   height: 45px;
   width: auto;
   position: relative;
   top: -4px;
 }
-.navbar .navbar-brand:hover {
-  color: #ffffff;
-}
-.navbar .navbar-toggler {
-  padding: 0;
-}
-.navbar .navbar-toggler i {
-  font-size: 32px;
-  color: #fff;
-}
-.navbar .navbar-toggler:focus {
-  box-shadow: none;
-}
-.navbar .navbar-collapse {
-  position: relative;
-  width: 60%;
-  text-align: center;
-  left: -10px;
-}
-.navbar .navbar-nav li {
-  padding: 0 10px;
-}
+
 .navbar .navbar-nav li a {
   color: #ffffff;
   font-weight: 700;
@@ -187,63 +164,76 @@ img {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 .navbar .navbar-nav li a:hover {
   color: #edcc36;
 }
-.navbar .navbar-nav li .button {
-  color: #fff;
-  margin-top: -3px;
-  display: inline-block;
-  margin-right: -15px;
-}
+
 .navbar .button-navbar {
   width: 20%;
   float: right;
   text-align: right;
 }
+
 .navbar .button-navbar li {
   display: inline-block;
   margin-left: 15px;
-}
-
-.navbar-fixed {
-  background: #090909;
 }
 
 /* ------------------------------
   intro
 ---------------------------------*/
 .intro {
-  padding-top: 210px;
-  padding-bottom: 0;
-}
-.intro .content-text {
   position: relative;
-  top: -35px;
-}
-.intro .entry {
-  padding: 0 100px;
-}
-.intro .entry .button {
-  margin-top: 20px;
-}
-.intro span {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  display: block;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #edcc36;
+  padding-top: 210px;
+  padding-bottom: 210px;
+  background-image: url('../img/intro.jpg'); /* Path to your house image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff; /* White text color */
+  text-align: center;
 }
 
-/* ------------------------------
-  Search Bar
----------------------------------*/
+/* Dark overlay */
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5 = 50% dark) */
+  z-index: 1;
+}
+
+.intro .content-text {
+  position: relative;
+  z-index: 2; /* Ensure text is above the overlay */
+  text-align: center;
+  padding: 20px; /* Add padding around the content */
+}
+
+.intro .content-text span {
+  font-size: 24px; /* Subtitle font size */
+  font-weight: 600; /* Semi-bold font weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+  color: #edcc36; /* Yellow color for the subtitle */
+}
+
+.intro .content-text h1 {
+  font-size: 48px; /* Large font size for the title */
+  font-weight: 700; /* Bold font weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow to the text */
+  color: #ffffff; /* White text color */
+  margin-bottom: 20px;
+}
+
+/* Search Bar Styling */
 .filter {
   margin-top: 20px;
   padding: 20px;
-  background: #1a1a1a; /* Dark background for the search bar container */
+  background: rgba(26, 26, 26, 0.8); /* Semi-transparent dark background */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -293,7 +283,6 @@ img {
 .filter .btn-main:active {
   transform: translateY(0); /* Reset lift effect on click */
 }
-
 /* Additional Styles for Better Alignment */
 .filter .row {
   display: flex;
