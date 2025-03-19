@@ -293,6 +293,28 @@ img {
   transform: translateY(0); /* Reset lift effect on click */
 }
 
+/* ------------------------------
+  Tabs Styling
+---------------------------------*/
+.common-tab .nav-link {
+  color: #edcc36; /* Yellow text color */
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove border */
+  font-weight: 600; /* Bold text */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.common-tab .nav-link.active {
+  color: #000000; /* Black text color for active tab */
+  background-color: #edcc36; /* Yellow background for active tab */
+  border-radius: 5px; /* Rounded corners for active tab */
+}
+
+.common-tab .nav-link:hover {
+  color: #ffffff; /* White text color on hover */
+}
+
+
 
 /* ------------------------------
   about
