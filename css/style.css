@@ -238,6 +238,18 @@ img {
 }
 
 /* ------------------------------
+  Search Bar
+---------------------------------*/
+.filter {
+  margin-top: 20px;
+  padding: 20px;
+  background: #1a1a1a; /* Dark background for the search bar container */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ------------------------------
   about
 ---------------------------------*/
 .about {
