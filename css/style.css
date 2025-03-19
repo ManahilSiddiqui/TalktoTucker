@@ -261,6 +261,38 @@ img {
   transition: border-color 0.3s ease;
 }
 
+.filter .common-input::placeholder {
+  color: #777777; /* Placeholder text color */
+}
+
+.filter .common-input:focus {
+  border-color: #ffffff; /* White border on focus */
+}
+
+.filter .btn-main {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #090909; /* Dark text color */
+  background: #edcc36; /* Yellow background to match the theme */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.filter .btn-main:hover {
+  background: #ffffff; /* White background on hover */
+  color: #090909;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.filter .btn-main:active {
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
 
 /* ------------------------------
   about
