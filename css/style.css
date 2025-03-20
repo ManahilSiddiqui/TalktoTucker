@@ -410,21 +410,34 @@ img {
 /* ------------------------------
   about
 ---------------------------------*/
-.about {
-  padding-top: 120px;
+.col-lg-4.profileColumn {
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
 }
-.about h2 {
-  padding-left: 100px;
-  padding-right: 100px;
+
+.profileSidebar{
+  position: relative;
+  background: #edcc36;
+  min-height: 100px;
+  box-shadow: -3px 2px 21px 4px rgba(32, 30, 41, 1);
 }
-.about .content-left img {
-  margin-top: 75px;
+
+.psPhoto{
+  position: relative;
+  overflow: hidden;
 }
-.about .content-center img {
-  margin-bottom: 10px;
+.psPhoto img{
+  width: 100%;
+  height: auto;
 }
-.about .content-right .button {
-  margin-top: 10px;
+
+.icon_box_01{
+  position: relative;
+  padding-left: 69px;
+  padding-top: 5px;
+  min-height: 50px;
+  margin-bottom: 30px;
 }
 
 /* ------------------------------
