@@ -1,4 +1,5 @@
 
+
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* ------------------------------
   General
@@ -142,31 +143,89 @@ img {
   padding: 0;
   text-align: center;
   background: #090909; /* Dark background for the navbar */
+  transition: background 0.3s ease, padding 0.3s ease; /* Smooth transition for background and padding */
 }
+
+.navbar.scrolled {
+  padding: 10px 0; /* Reduce padding when scrolled */
+  background: rgba(9, 9, 9, 0.9); /* Slightly transparent background on scroll */
+}
+
 
 .navbar .container {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #edcc36;
+  transition: padding 0.3s ease; /* Smooth transition for container padding */
 }
+
+.navbar.scrolled .container {
+  padding-top: 15px;
+  padding-bottom: 15px; /* Reduce padding when scrolled */
+}
+
 
 .navbar .navbar-brand img {
   height: 45px;
   width: auto;
   position: relative;
   top: -4px;
+  transition: height 0.3s ease; /* Smooth transition for logo size */
 }
 
-.navbar .navbar-nav li a {
-  color: #ffffff;
+.navbar.scrolled .navbar-brand img {
+  height: 35px; /* Smaller logo when scrolled */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important; /* White text color */
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding: 10px 15px !important; /* Add padding to links */
+  transition: color 0.3s ease, background 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.navbar .navbar-nav li a:hover {
-  color: #edcc36;
+/* Navbar links on hover */
+.navbar-nav .nav-link:hover {
+  color: #edcc36 !important; /* Yellow on hover */
+}
+
+/* Active link styling */
+.navbar-nav .nav-link.active {
+  color: #edcc36 !important; /* Yellow for active link */
+}
+
+/* Navbar toggler (hamburger menu) */
+.navbar-toggler {
+  border: none !important; /* Remove default border */
+  padding: 0.5rem 0.75rem; /* Adjust padding */
+  outline: none !important; /* Remove outline on focus */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; /* Custom white hamburger icon */
+}
+
+/* Dropdown menu styling */
+.navbar-nav .dropdown-menu {
+  background: #090909; /* Dark background for dropdown */
+
+  margin-top: 10px; /* Add space between navbar and dropdown */
+}
+
+.navbar-nav .dropdown-item {
+  color: #ffffff !important; /* White text color */
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px; /* Add padding to dropdown items */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar-nav .dropdown-item:hover {
+  background: #edcc36; /* Yellow background on hover */
+  color: #090909 !important; /* Dark text on hover */
 }
 
 .navbar .button-navbar {
@@ -306,7 +365,7 @@ img {
   Tabs Styling
 ---------------------------------*/
 .common-tab .nav-link {
-  color: #edcc36; /* Yellow text color */
+  color: #ffffff; /* Yellow text color */
   background-color: transparent; /* Transparent background */
   border: none; /* Remove border */
   font-weight: 600; /* Bold text */
@@ -510,18 +569,16 @@ footer .cp {
     background: #090909;
   }
 
-  .intro .col-md {
-    flex: 100%;
+  .navbar-nav .dropdown-menu {
+    background: transparent; /* Transparent background for dropdown on mobile */
+    border: none;
   }
 
-  .pricing .col-md-left {
-    flex: 100%;
-  }
-
-  .contact .open {
-    padding-top: 33%;
+  .navbar-nav .dropdown-item {
+    padding-left: 30px; /* Indent dropdown items on mobile */
   }
 }
+
 @media (max-width: 767px) {
   .about h2 {
     padding-left: 0;
