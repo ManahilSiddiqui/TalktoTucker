@@ -416,6 +416,12 @@ img {
   max-width: 30%;
 }
 
+.custom-h1 {
+  text-align: center;
+  margin: 0 auto; /* Centers horizontally */
+  font-size: 40px;
+}
+
 .profileSidebar{
   position: relative;
   background: #edcc36;
