@@ -438,6 +438,11 @@ img {
   height: auto;
 }
 
+.pscontact h3 {
+  text-align: center;
+  color: #090909;
+}
+
 .icon_box_01{
   position: relative;
   padding-left: 69px;
