@@ -192,16 +192,39 @@ img {
   color: #edcc36 !important; /* Yellow on hover */
 }
 
-/* Active link styling */
+/* Actives link styling */
 .navbar-nav .nav-link.active {
   color: #edcc36 !important; /* Yellow for active link */
 }
 
+/* Ensures the navbar is flex and centered */
+.navbar .navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
+/* Center the nav links */
+.navbar-nav.mx-auto {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+/* Adjusted the padding and margin for nav items */
+.navbar-nav .nav-item {
+  margin: 0 10px; /* Adjust the spacing between items */
+}
+
+/* Ensures the right-aligned button stays on the right */
+.navbar-nav.ms-auto {
+  margin-left: auto; /* Pushes the button to the right */
+}
+
 /* Navbar toggler (hamburger menu) */
 .navbar-toggler {
-  border: none !important; /* Remove default border */
-  padding: 0.5rem 0.75rem; /* Adjust padding */
-  outline: none !important; /* Remove outline on focus */
+  border: none !important; /* Removes default border */
+  padding: 0.5rem 0.75rem; /* Adjusts padding */
+  outline: none !important; /* Removes outline on focus */
 }
 
 .navbar-toggler-icon {
@@ -246,7 +269,7 @@ img {
   position: relative;
   padding-top: 210px;
   padding-bottom: 210px;
-  background-image: url('../img/intro.jpg'); /* Path to your house image */
+  background-image: url('../img/intro.jpg'); /* Path to house image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
