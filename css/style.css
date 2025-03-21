@@ -463,6 +463,12 @@ img {
   /* Remove absolute positioning */
 }
 
+.icon_box_01 .text-group {
+  display: flex;
+  flex-direction: column; /* Stack h3 and p vertically */
+  gap: 5px; /* Add spacing between h3 and p */
+}
+
 .icon_box_01 h3 {
   font-size: 16px;
   line-height: 1;
