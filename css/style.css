@@ -516,6 +516,11 @@ img {
   margin-left: 100px;
 }
 
+.email-button:hover {
+  background-color: #ffffff; /* white background on hover */
+  color: #090909;
+}
+
 /* ------------------------------
 gallery
 ---------------------------------*/
