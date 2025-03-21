@@ -551,6 +551,21 @@ img {
   margin-bottom: 20px;
 }
 
+.psSocial a {
+  width: 60px; /* Set icon container size */
+  height: 60px; /* Set icon container size */
+  background: #201e29; /* Default background color for the circle */
+  color: #FFF;
+  border-radius: 50%; /* Make the icon container circular */
+  font-size: 80px;
+  line-height: 40px; /* Center the icon vertically */
+  text-align: center;
+  transition: all ease 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* ------------------------------
 gallery
