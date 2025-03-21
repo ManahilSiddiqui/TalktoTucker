@@ -444,13 +444,14 @@ img {
 }
 
 .icon_box_01 {
-  display: flex; /* Uses Flexbox for horizontal alignment */
-  align-items: center; /* Vertically centers the icon and text */
-  gap: 15px; /* Adds space between the icon and text */
+  display: flex; /* Align icon and text group horizontally */
+  align-items: center; /* Vertically center the icon and text group */
+  gap: 10px; /* Add spacing between icon and text group */
   padding-left: 0; /* Removes left padding (no longer needed) */
   padding-top: 0; /* Removes top padding (no longer needed) */
-  min-height: 50px; /* Keeps the minimum height */
-  margin-bottom: 30px; /* Keep the bottom margin */
+  min-height: auto; /* Remove fixed min-height */
+  margin-bottom: 0.5px; /* Keep the bottom margin */
+  border: 1px solid blue; /* Debugging border */
 }
 
 .icon_box_01 i {
