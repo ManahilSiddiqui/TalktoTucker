@@ -442,14 +442,16 @@ img {
 .pscontact h3 {
   text-align: center;
   color: #090909;
-  margin-bottom: 20px; /* Adds space below the name */
+  margin-bottom: 20px; /* Add space below the name */
 }
 
 .pscontact {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* Adjusts the gap between child elements */
+  gap: 5px; /* Adjust the gap between child elements */
 }
+
+
 
 .icon_box_01 {
   display: flex; /* Align icon and text group horizontally */
@@ -463,12 +465,11 @@ img {
 }
 
 .icon_box_01 i {
-  display: flex; /* Makes the icon container a flexbox */
-  align-items: center; /* Centers the icon vertically */
-  justify-content: center; /* Centers the icon horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50px; /* Sets the width of the icon container */
-  height: 50px; /* Sets the height of the icon container */
-  /* Remove absolute positioning */
+  height: 50px; /* Adjust height to match icon size */
 }
 
 .icon_box_01 .text-group {
@@ -478,7 +479,7 @@ img {
 }
 
 .icon_box_01 h3 {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1;
   font-weight: 600;
   color: #090909;
@@ -487,10 +488,10 @@ img {
 }
 
 .icon_box_01 p {
-  font-size: 17px;
+  font-size: 10px;
   margin: 0;
   color: #090909;
-  line-height: 30px;
+  line-height: 10px;
 }
 
 .icon_box_01 i img {
