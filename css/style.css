@@ -441,6 +441,7 @@ img {
 .pscontact h3 {
   text-align: center;
   color: #090909;
+  margin-bottom: 20px; /* Adds space below the name */
 }
 
 .icon_box_01 {
