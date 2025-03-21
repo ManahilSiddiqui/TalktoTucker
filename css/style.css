@@ -443,12 +443,44 @@ img {
   color: #090909;
 }
 
-.icon_box_01{
-  position: relative;
-  padding-left: 69px;
-  padding-top: 5px;
-  min-height: 50px;
-  margin-bottom: 30px;
+.icon_box_01 {
+  display: flex; /* Uses Flexbox for horizontal alignment */
+  align-items: center; /* Vertically centers the icon and text */
+  gap: 15px; /* Adds space between the icon and text */
+  padding-left: 0; /* Removes left padding (no longer needed) */
+  padding-top: 0; /* Removes top padding (no longer needed) */
+  min-height: 50px; /* Keeps the minimum height */
+  margin-bottom: 30px; /* Keep the bottom margin */
+}
+
+.icon_box_01 i {
+  display: flex; /* Makes the icon container a flexbox */
+  align-items: center; /* Centers the icon vertically */
+  justify-content: center; /* Centers the icon horizontally */
+  width: 50px; /* Sets the width of the icon container */
+  height: 50px; /* Sets the height of the icon container */
+  /* Remove absolute positioning */
+}
+
+.icon_box_01 h3 {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  color: #090909;
+  text-transform: capitalize;
+  margin: 0; /* Removes negative margin */
+}
+
+.icon_box_01 p {
+  font-size: 17px;
+  margin: 0;
+  color: #090909;
+  line-height: 30px;
+}
+
+.icon_box_01 i img {
+  width: 24px; /* Sets the width of the icon */
+  height: 24px; /* Sets the height of the icon */
 }
 
 /* ------------------------------
