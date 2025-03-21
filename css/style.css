@@ -567,8 +567,25 @@ img {
 }
 
 .psSocial a img {
-  width: 30px; /* Set icon size */
-  height: 30px; /* Set icon size */
+  width: 30px; /* Sets icon size */
+  height: 30px; /* Sets icon size */
+}
+
+.psSocial a.fac {
+  background: #1773EA; /* Facebook circle color */
+}
+
+.psSocial a.lin {
+  background-color: #0a66c2;
+}
+
+.psSocial a.ins {
+  background: #D62977; /* Instagram circle color */
+}
+
+.psSocial a:hover {
+  background: #ffffff; /* Hover color for the circle */
+  transform: scale(1.1); /* Adds a slight hover effect */
 }
 
 
