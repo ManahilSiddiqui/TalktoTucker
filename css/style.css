@@ -461,7 +461,6 @@ img {
   padding-top: 0; /* Removes top padding (no longer needed) */
   min-height: auto; /* Remove fixed min-height */
   margin-bottom: 0.5px; /* Keep the bottom margin */
-  border: 1px solid blue; /* Debugging border */
 }
 
 .icon_box_01 i {
