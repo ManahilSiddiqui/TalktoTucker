@@ -566,6 +566,11 @@ img {
   justify-content: center;
 }
 
+.psSocial a img {
+  width: 30px; /* Set icon size */
+  height: 30px; /* Set icon size */
+}
+
 
 /* ------------------------------
 gallery
