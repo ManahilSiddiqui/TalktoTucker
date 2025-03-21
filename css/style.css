@@ -521,6 +521,12 @@ img {
   color: #090909;
 }
 
+.email .email-icon {
+  width: 25px; /* Set icon width */
+  height: 25px; /* Set icon height */
+  margin-top: 10px;
+}
+
 /* ------------------------------
 gallery
 ---------------------------------*/
