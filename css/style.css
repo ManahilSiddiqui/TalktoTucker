@@ -444,6 +444,12 @@ img {
   margin-bottom: 20px; /* Adds space below the name */
 }
 
+.pscontact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adjusts the gap between child elements */
+}
+
 .icon_box_01 {
   display: flex; /* Align icon and text group horizontally */
   align-items: center; /* Vertically center the icon and text group */
