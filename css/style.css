@@ -421,6 +421,13 @@ img {
   padding-right: 100px;
 }
 
+.center-text {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
 
 .about .content-left img {
   margin-top: 75px;
@@ -431,7 +438,6 @@ img {
 .about .content-right .button {
   margin-top: 10px;
 }
-
 
 
 /* ------------------------------
