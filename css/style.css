@@ -445,6 +445,15 @@ img {
   margin: 20px -10px; /* Adds some spacing above and below the icons */
 }
 
+/* Style the social icons list */
+.social-icons {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: inline-block; /* Make the list inline-block to center it */
+}
+
+
 
 /* ------------------------------
 gallery
