@@ -624,6 +624,35 @@ gallery
 }
 
 /* ------------------------------
+  Listings
+---------------------------------*/
+
+.gallery-listings {
+  padding-top: 120px;
+}
+
+.gallery-listings h2 {
+  text-align: center;
+  background: #090909;
+  display: inline-block;
+  padding: 25px;
+  margin: auto;
+  left: 50%;
+  position: relative;
+  z-index: 1;
+  transform: translate(-50%);
+}
+
+.gallery-listings .divider {
+  height: 5px;
+  width: 100%;
+  background: #edcc36;
+  position: relative;
+  top: -84px;
+}
+
+
+/* ------------------------------
   pricing
 ---------------------------------*/
 .pricing {
