@@ -595,7 +595,7 @@ House Value Section
 .house-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px; /* Optional: Rounded corners for the image */
+  border-radius: 10px; /* Rounded corners for the image */
 }
 
 /* ------------------------------
