@@ -587,6 +587,17 @@ House Value Section
   transform: scale(1.05); /* Slight zoom effect */
 }
 
+.house-image {
+  flex: 1;
+  text-align: center;
+}
+
+.house-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners for the image */
+}
+
 /* ------------------------------
 gallery
 ---------------------------------*/
