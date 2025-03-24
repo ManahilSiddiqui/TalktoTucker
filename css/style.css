@@ -470,6 +470,16 @@ img {
   color: #edcc36; /* Light gray on hover */
 }
 
+.contact-section {
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  max-width: 600px; /* Limits width for better readability */
+  margin: 0 auto; /* Centers the section */
+  background: rgba(0, 0, 0, 0.5); /* Added background for contrast */
+  margin-top: 80px;
+}
+
+
 
 
 /* ------------------------------
