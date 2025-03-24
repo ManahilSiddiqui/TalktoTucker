@@ -508,8 +508,26 @@ img {
   color: #ffffff; /* White text for better readability */
 }
 
+.button-email {
+  background-color: #edcc36;
+  color: #090909;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px; /* Reduces margin */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Full-width button */
+}
 
-
+.button-email:hover {
+  background-color: #edcc36; /* Slightlyes darker yellow on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
 
 /* ------------------------------
 gallery
