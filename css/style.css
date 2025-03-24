@@ -530,6 +530,23 @@ img {
 }
 
 /* ------------------------------
+House Value Section
+---------------------------------*/
+
+.home-value-section {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between search bar and image */
+  margin-top: 40px; /* Adds margin to separate from the divider */
+}
+
+.home-h1 {
+  font-size: 20px;
+  margin-bottom: -130px;
+  margin-top: 60px;
+}
+
+/* ------------------------------
 gallery
 ---------------------------------*/
 .gallery {
