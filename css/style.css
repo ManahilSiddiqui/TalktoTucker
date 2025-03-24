@@ -491,6 +491,23 @@ img {
   gap: 15px; /* Space between icon and text */
 }
 
+.contact-item i {
+  height: 40px; /* Smaller icon size */
+  width: 40px;
+  background: #edcc36;
+  text-align: center;
+  line-height: 40px; /* Center icon vertically */
+  color: #090909;
+  font-size: 20px; /* Smaller font size */
+  border-radius: 50%; /* Circular icons */
+  flex-shrink: 0; /* Prevent icons from shrinking */
+}
+
+.contact-item span {
+  font-size: 16px;
+  color: #ffffff; /* White text for better readability */
+}
+
 
 
 
