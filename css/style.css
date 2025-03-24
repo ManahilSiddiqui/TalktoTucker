@@ -496,11 +496,11 @@ img {
   width: 40px;
   background: #edcc36;
   text-align: center;
-  line-height: 40px; /* Center icon vertically */
+  line-height: 40px; /* Centers icon vertically */
   color: #090909;
   font-size: 20px; /* Smaller font size */
   border-radius: 50%; /* Circular icons */
-  flex-shrink: 0; /* Prevent icons from shrinking */
+  flex-shrink: 0; /* Prevents icons from shrinking */
 }
 
 .contact-item span {
