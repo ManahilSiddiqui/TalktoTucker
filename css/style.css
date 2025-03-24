@@ -568,6 +568,24 @@ House Value Section
   color: #777777; /* Placeholder text color */
 }
 
+.search-bar .button {
+  background-color: #edcc36;
+  color: #090909;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar .button:hover {
+  background-color: #ffffff; /* White background on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
 
 /* ------------------------------
 gallery
