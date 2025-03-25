@@ -789,6 +789,17 @@ gallery
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.blog-post:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
 
 /* ------------------------------
   footer
