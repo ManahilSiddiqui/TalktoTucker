@@ -414,6 +414,50 @@ img {
   padding-top: 120px;
 }
 
+.about-card {
+  display: flex;
+  align-items: center;
+  background-color: #090909;
+  color: white;
+  padding: 40px; /* Increased padding for better spacing */
+  border-radius: 10px;
+  max-width: 1000px;
+  margin-left: 100px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+  width: 300px; /* Increased size for better proportion */
+  height: auto;
+  border-radius: 10px;
+  margin-right: 40px; /* Added more space between image and text */
+}
+
+.about-info {
+  flex: 1; /* Allows text to expand within available space */
+}
+
+.about-info h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-info h3::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: white;
+  margin-top: 5px;
+}
+
+/* Added white underline below name */
+.about-info h3 {
+  position: relative;
+  display: inline-block;
+}
+
 .about h2 {
   text-align: center;
   margin-top: -100px;
@@ -421,112 +465,126 @@ img {
   padding-right: 100px;
 }
 
-.center-text {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  margin-top: -20px;
-  margin-bottom: 20px;
+.bio-text {
+  text-align: justify;
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
 }
 
-.about .content-left img {
-  margin-top: 75px;
+.contact-details {
+  margin-top: 50px; /* Added spacing between text and contact details */
 }
-.about .content-center img {
+
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
-.about .content-right .button {
-  margin-top: 10px;
+
+.contact-details i {
+  background: #25290f;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
 }
 
-/* Centers the icons container */
-.icons-container {
-  text-align: center; /* Centers the content horizontally */
-  margin: 20px -10px; /* Adds some spacing above and below the icons */
-}
-
-/* Styles the social icons list */
+/* Social Icons - Move to Top Right */
 .social-icons {
-  list-style: none; /* Removes bullet points */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
-  display: inline-block; /* Makes the list inline-block to center it */
+  position: absolute;
+  right: 600px;
+  display: flex;
+  gap: 15px;
 }
 
-/* Style each icon */
-.social-icons li {
-  display: inline-block; /* Display icons in a row */
-  margin: 0 10px; /* Add spacing between icons */
-}
-
-/* Make the icons white */
-.social-icons li a i.la {
+.social-icons a {
   color: white;
-  font-size: 24px; /* Adjust the size of the icons */
+  font-size: 20px;
+  transition: color 0.3s ease;
 }
 
-/* Adds hover effects */
-.social-icons li a:hover i.la {
-  color: #edcc36; /* Light gray on hover */
+.social-icons a:hover {
+  color: #edcc36;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.button-email, .button-contact {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+}
+
+.button-email {
+  background: #25290f;
+  color: white;
+}
+
+.button-contact {
+  background: #edcc36;
+  color: black;
+}
+
+.button-email:hover, .button-contact:hover {
+  transform: scale(1.05);
 }
 
 .contact-section {
   padding: 20px;
-  border-radius: 10px; /* Rounded corners */
-  max-width: 600px; /* Limits width for better readability */
-  margin: 0 auto; /* Centers the section */
-  background: rgba(0, 0, 0, 0.5); /* Added background for contrast */
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0px auto;
+  background: rgba(0, 0, 0, 0.5);
   margin-top: 80px;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Space between contact items */
+  gap: 15px;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 15px; /* Space between icon and text */
+  gap: 15px;
 }
 
 .contact-item i {
-  height: 40px; /* Smaller icon size */
+  height: 40px;
   width: 40px;
   background: #edcc36;
   text-align: center;
-  line-height: 40px; /* Centers icon vertically */
+  line-height: 40px;
   color: #090909;
-  font-size: 20px; /* Smaller font size */
-  border-radius: 50%; /* Circular icons */
-  flex-shrink: 0; /* Prevents icons from shrinking */
+  font-size: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .contact-item span {
   font-size: 16px;
-  color: #ffffff; /* White text for better readability */
-}
-
-.button-email {
-  background-color: #edcc36;
-  color: #090909;
-  padding: 12px 24px;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 20px; /* Reduces margin */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  border: none;
-  cursor: pointer;
-  width: 100%; /* Full-width button */
-}
-
-.button-email:hover {
-  background-color: #edcc36; /* Slightlyes darker yellow on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  color: #ffffff;
 }
 
 /* ------------------------------
