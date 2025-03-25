@@ -800,6 +800,19 @@ gallery
   margin-bottom: 15px;
 }
 
+.blog-post h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff; /* White text for headings */
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 16px;
+  color: #dddddd; /* Light gray text for paragraphs */
+  margin-bottom: 15px;
+}
+
 
 /* ------------------------------
   footer
