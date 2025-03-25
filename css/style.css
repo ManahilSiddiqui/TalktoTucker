@@ -813,6 +813,23 @@ gallery
   margin-bottom: 15px;
 }
 
+.blog-post .button {
+  background-color: #edcc36; /* Yellow button to match the theme */
+  color: #090909;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blog-post .button:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #090909;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
 
 /* ------------------------------
   footer
