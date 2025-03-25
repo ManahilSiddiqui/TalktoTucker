@@ -780,6 +780,15 @@ gallery
   z-index: 0; /* Ensure the divider is behind the h2 */
 }
 
+.blog-post {
+  background: #1a1a1a; /* Darker background for blog posts */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 /* ------------------------------
   footer
