@@ -771,6 +771,15 @@ gallery
   z-index: 1;
 }
 
+.blog .divider {
+  height: 5px;
+  width: 100%;
+  background: #edcc36; /* Yellow divider to match the theme */
+  position: relative;
+  top: -42px; /* Adjust this value to align with the h2 */
+  z-index: 0; /* Ensure the divider is behind the h2 */
+}
+
 
 /* ------------------------------
   footer
