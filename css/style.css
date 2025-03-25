@@ -502,7 +502,7 @@ img {
 /* Social Icons - Move to Top Right */
 .social-icons {
   position: absolute;
-  right: 600px;
+  right: 400px;
   display: flex;
   gap: 15px;
 }
@@ -586,6 +586,7 @@ img {
   font-size: 16px;
   color: #ffffff;
 }
+
 
 /* ------------------------------
 House Value Section
