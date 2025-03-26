@@ -465,6 +465,22 @@ img {
   padding-right: 100px;
 }
 
+.bio-heading {
+  display: flex;
+  align-items: center;
+  font-size: 30px; 
+  color: #ffffff; /* White text */
+  text-transform: none;
+}
+
+.bio-heading::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px; /* Adjusts thickness */
+  background-color: #ffffff; /* White line */
+  margin-left: 10px; /* Space between text and line */
+}
+
 .bio-text {
   text-align: justify;
   margin-top: 30px;
