@@ -419,7 +419,7 @@ img {
   align-items: center;
   background-color: #090909;
   color: white;
-  padding: 40px; /* Increased padding for better spacing */
+  padding: 64px; /* Increased padding for better spacing */
   border-radius: 10px;
   max-width: 1000px;
   margin-left: 100px;
