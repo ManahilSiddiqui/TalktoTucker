@@ -917,91 +917,358 @@ footer .cp {
   text-align: right;
 }
 
-/* ------------------------------
-  responsive
----------------------------------*/
-@media (max-width: 991px) {
-  .navbar .navbar-collapse {
-    background: #090909;
-    padding-bottom: 25px;
+/* ==============================================
+   GLOBAL RESPONSIVE STYLES
+   ============================================== */
+
+   @media (max-width: 991px) {
+    /* Tablet Styles */
+    
+    /* Navbar */
+    .navbar .container {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    
+    .navbar-brand img {
+      height: 35px;
+    }
+    
+    /* Intro Section */
+    .intro {
+      padding-top: 180px;
+      padding-bottom: 180px;
+    }
+    
+    h1 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    
+    /* About Section */
+    .about-card {
+      flex-direction: column;
+      margin-left: 0;
+      padding: 30px;
+    }
+    
+    .about-image {
+      width: 100%;
+      max-width: 300px;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    
+    .social-icons {
+      position: static;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    /* Home Value Section */
+    .home-value-section {
+      flex-direction: column;
+    }
+    
+    .house-image {
+      order: -1;
+      margin-bottom: 30px;
+    }
+    
+    /* Team & Listings */
+    .gallery .row, 
+    .gallery-listings .row {
+      gap: 30px;
+    }
+    
+    .col-md-4 {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* Small Tablet/Large Mobile Styles */
+    
+    /* Typography */
+    h1 {
+      font-size: 42px;
+      line-height: 50px;
+    }
+    
+    h2 {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    
+    /* Navbar */
+    .navbar-collapse {
+      padding: 20px 0;
+    }
+    
+    /* Intro Section */
+    .intro {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+    
+    /* About Section */
+    .about h2 {
+      margin-top: -50px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+    .bio-text {
+      padding: 15px;
+    }
+    
+    /* Home Value Section */
+    .home-h1 {
+      font-size: 18px;
+      margin-bottom: -100px;
+    }
+    
+    /* Team & Listings */
+    .col-md-4 {
+      width: 100%;
+    }
+    
+    /* Testimonials */
+    .testimonial .swiper .content {
+      padding: 0 5%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    /* Mobile Styles */
+    
+    /* Typography */
+    h1 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    
+    h2 {
+      font-size: 30px;
+      line-height: 36px;
+      padding: 15px;
+    }
+    
+    /* Navbar */
+    .navbar .container {
+      padding: 10px 15px;
+    }
+    
+    /* Intro Section */
+    .intro {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    
+    .intro .content-text span {
+      font-size: 20px;
+    }
+    
+    /* About Section */
+    .about {
+      padding-top: 80px;
+    }
+    
+    .about-card {
+      padding: 20px;
+    }
+    
+    .button-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    /* Home Value Section */
+    .home-h1 {
+      font-size: 16px;
+      margin-bottom: -80px;
+      margin-top: 40px;
+    }
+    
+    .search-bar input {
+      padding: 10px 15px;
+    }
+    
+    /* Gallery Dividers */
+    .gallery .divider,
+    .gallery-listings .divider {
+      top: -60px;
+      height: 3px;
+    }
+    
+    /* Testimonials */
+    .testimonial {
+      padding: 80px 0;
+    }
+    
+    /* Footer */
+    footer .row > div {
+      text-align: center !important;
+    }
+    
+    footer .cp {
+      margin-top: 15px;
+    }
+  }
+  
+  /* ==============================================
+     COMPONENT-SPECIFIC RESPONSIVE FIXES
+     ============================================== */
+  
+     @media (max-width: 991px) {
+      body {
+          font-size: 16px;
+      }
+      .container {
+          width: 90%;
+      }
+      .navbar .navbar-collapse {
+        background: #090909;
+        padding-bottom: 25px;
+      }
+    
+      .navbar .button-navbar {
+        display: none;
+      }
+    
+      .navbar .container {
+        background: #090909;
+      }
+      
+      .about-card {
+          flex-direction: column;
+          text-align: center;
+          padding: 30px;
+      }
+      .about-image {
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto 20px;
+      }
+      .home-value-section {
+          flex-direction: column;
+      }
+      .house-image {
+          order: -1;
+          margin-bottom: 30px;
+      }
   }
 
-  .navbar .button-navbar {
-    display: none;
-  }
-
-  .navbar .container {
-    background: #090909;
-  }
-
-  .navbar-nav .dropdown-menu {
-    background: transparent; /* Transparent background for dropdown on mobile */
-    border: none;
-  }
-
-  .navbar-nav .dropdown-item {
-    padding-left: 30px; /* Indent dropdown items on mobile */
-  }
-}
-
+  /* Smaller Tablets & Large Phones (max-width: 767px) */
 @media (max-width: 767px) {
+  .navbar-collapse {
+      padding: 20px 0;
+  }
+  .intro {
+      padding-top: 150px;
+      padding-bottom: 150px;
+  }
   .about h2 {
-    padding-left: 0;
-    padding-right: 0;
+      margin-top: -50px;
+      padding-left: 0;
+      padding-right: 0;
   }
-
-  .about .content-left img {
-    margin-top: 30px;
+  .bio-text {
+      padding: 15px;
   }
-
+  .col-md-4 {
+      width: 100%;
+  }
   .testimonial .swiper .content {
-    padding: 0 12%;
-  }
-
-  .contact h2 {
-    margin-top: 30px;
-  }
-
-  .contact .open {
-    padding-top: 5%;
+      padding: 0 5%;
   }
 }
+
+/* Mobile Phones (max-width: 575px) */
 @media (max-width: 575px) {
-  .container {
-    padding: 0 25px;
-  }
 
   .navbar .navbar-collapse {
     padding-top: 30px;
   }
-
-  h1 {
-    line-height: 48px;
-    font-size: 39px;
+  .container {
+      width: 100%;
+      padding: 10px;
   }
-
-  .intro .entry {
-    padding: 0;
+  .intro {
+      padding-top: 120px;
+      padding-bottom: 120px;
   }
-
   .about {
-    padding-left: 0;
-    padding-right: 0;
+      padding-top: 80px;
+  }
+  .about-card {
+      padding: 20px;
+  }
+  .button-group {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .home-h1 {
+      font-size: 16px;
+      margin-bottom: -80px;
+      margin-top: 40px;
   }
 
   .gallery .divider {
     display: none;
   }
 
-  .contact .open {
-    padding-top: 8%;
+  .gallery .popup-image img {
+    width: 100%; /* or a specific pixel value like 200px */
+    height: auto; /* maintains aspect ratio */
+    max-width: 250px; /* optional: sets a maximum size */
   }
 
-  footer {
+  /* columns to stacks vertically */
+  .gallery .row.g-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
     text-align: center;
   }
-  footer .cp {
+
+
+  .gallery-listings .divider {
+       display: none;
+  }
+
+  .gallery-listings .popup-image img {
+    width: 100%; /* or a specific pixel value like 200px */
+    height: auto; /* maintains aspect ratio */
+    max-width: 250px; /* optional: sets a maximum size */
+  }
+
+  /* columns to stacks vertically */
+  .gallery-listings .row.g-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery-listings .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 15px;
+  }
+
+
+  .blog .divider {
+    display: none;
+  }
+
+
+  .testimonial {
+      padding: 80px 0;
+  }
+  footer .cp {
+      margin-top: 15px;
   }
 }
