@@ -1183,6 +1183,9 @@ footer .cp {
 
 /* Mobile Phones (max-width: 575px) */
 @media (max-width: 575px) {
+  .navbar-toggler {
+    margin-right: 10px;
+  }
 
   .navbar .navbar-collapse {
     padding-top: 30px;
