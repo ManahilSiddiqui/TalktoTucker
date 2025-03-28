@@ -1193,6 +1193,10 @@ footer .cp {
     text-align: left !important;
   }
 
+  .about-info h3::after {
+    display: none !important; /* Hides the white line on mobile */
+  }
+
   .navbar-toggler {
     margin-right: 10px;
   }
