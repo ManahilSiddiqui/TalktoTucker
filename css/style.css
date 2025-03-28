@@ -1189,6 +1189,10 @@ footer .cp {
     line-height: 1.4;
   }
 
+  #about .about-info .contact-details p:last-child {
+    text-align: left !important;
+  }
+
   .navbar-toggler {
     margin-right: 10px;
   }
