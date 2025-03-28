@@ -1154,6 +1154,51 @@ footer .cp {
           order: -1;
           margin-bottom: 30px;
       }
+
+      .gallery .popup-image img {
+        width: 100%; /* or a specific pixel value like 200px */
+        height: auto; /* maintains aspect ratio */
+        max-width: 250px; /* optional: sets a maximum size */
+      }
+    
+      /* columns to stacks vertically */
+      .gallery .row.g-5 {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .gallery .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    
+      .gallery-listings {
+        margin-top: -140px;
+      }
+    
+      .gallery-listings .divider {
+           display: none;
+      }
+    
+      .gallery-listings .popup-image img {
+        width: 450px; /* or a specific pixel value like 200px */
+        height: 300px; /* maintains aspect ratio */
+      }
+    
+      /* columns to stacks vertically */
+      .gallery-listings .row.g-5 {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .gallery-listings .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+
   }
 
   /* Smaller Tablets & Large Phones (max-width: 767px) */
@@ -1165,24 +1210,78 @@ footer .cp {
       padding-top: 150px;
       padding-bottom: 150px;
   }
+
+  .gallery .popup-image img {
+    width: 100%; /* or a specific pixel value like 200px */
+    height: auto; /* maintains aspect ratio */
+    max-width: 250px; /* optional: sets a maximum size */
+  }
+
+  /* columns to stacks vertically */
+  .gallery .row.g-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .gallery-listings {
+    margin-top: -140px;
+  }
+
+  .gallery-listings .divider {
+       display: none;
+  }
+
+  .gallery-listings .popup-image img {
+    width: 100%; /* or a specific pixel value like 200px */
+    height: auto; /* maintains aspect ratio */
+    max-width: 250px; /* optional: sets a maximum size */
+  }
+
+  /* columns to stacks vertically */
+  .gallery-listings .row.g-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery-listings .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   .about h2 {
       margin-top: -50px;
       padding-left: 0;
       padding-right: 0;
   }
+
   .bio-text {
       padding: 15px;
   }
+
   .col-md-4 {
       width: 100%;
   }
+
   .testimonial .swiper .content {
       padding: 0 5%;
   }
+
 }
 
 /* Mobile Phones (max-width: 575px) */
 @media (max-width: 575px) {
+
+  html, body {
+    overflow-x: hidden; /* Blocks horizontal scrolling */
+    width: 100%; /* Ensures content fits screen width */
+  }
 
   .intro .content-text h1 {
     font-size: 36px !important;
@@ -1298,18 +1397,70 @@ footer .cp {
     text-align: center;
   }
 
+  .blog .container {
+    margin-top: 90px;
+  }
 
   .blog .divider {
     display: none;
   }
 
-  .testimonial {
-    margin-top: -90px;
+  #testimonial {
+    padding-bottom: 40px; /* Creates space before next section */
+    margin-top: -70px;
   }
 
-  .testimonial {
-      padding: 80px 0;
+  #testimonial .mySwiper {
+    padding: 0 10px;
   }
+
+  /* Reduces testimonial card size */
+  #testimonial .swiper-slide {
+    padding: 15px;
+    margin-top: -40px;
+  }
+
+  #testimonial .content {
+    padding: 20px;
+  }
+  
+  /* Reduces font sizes */
+  #testimonial .content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  #testimonial .text h5 {
+    font-size: 16px;
+  }
+  
+  /* Makes navigation buttons smaller */
+  #testimonial .swiper-button-prev,
+  #testimonial .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  #testimonial .container, 
+  #testimonial .mySwiper, 
+  #testimonial .swiper-slide {
+    max-width: 100%; /* Forces elements to stay within screen */
+  }
+  
+  #testimonial .content p {
+    word-break: break-word; /* Prevents long text from overflowing */
+  }
+  
+  /* Reduces space between slides */
+  .swiper-wrapper {
+    padding-bottom: 10px;
+  }
+
+  .swiper-wrapper {
+    box-sizing: border-box; /* Prevents padding from adding extra width */
+  }
+
   footer .cp {
       margin-top: 15px;
   }
