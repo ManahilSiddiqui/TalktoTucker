@@ -1183,6 +1183,12 @@ footer .cp {
 
 /* Mobile Phones (max-width: 575px) */
 @media (max-width: 575px) {
+
+  .intro .content-text h1 {
+    font-size: 36px !important;
+    line-height: 1.4;
+  }
+
   .navbar-toggler {
     margin-right: 10px;
   }
