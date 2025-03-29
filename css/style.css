@@ -1349,6 +1349,11 @@ footer .cp {
     margin-top: 40px;
 }
 
+.gallery h2 {
+  font-size: 1.5rem; 
+  line-height: 1.3;  
+}
+
   .gallery .popup-image img {
     width: 100%; /* or a specific pixel value like 200px */
     height: auto; /* maintains aspect ratio */
