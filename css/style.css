@@ -1349,10 +1349,6 @@ footer .cp {
     margin-top: 40px;
 }
 
-  .gallery .divider {
-    display: none;
-  }
-
   .gallery .popup-image img {
     width: 100%; /* or a specific pixel value like 200px */
     height: auto; /* maintains aspect ratio */
@@ -1375,10 +1371,6 @@ footer .cp {
     margin-top: -140px;
   }
 
-  .gallery-listings .divider {
-       display: none;
-  }
-
   .gallery-listings .popup-image img {
     width: 100%; /* or a specific pixel value like 200px */
     height: auto; /* maintains aspect ratio */
@@ -1399,10 +1391,6 @@ footer .cp {
 
   .blog .container {
     margin-top: 90px;
-  }
-
-  .blog .divider {
-    display: none;
   }
 
   #testimonial {
