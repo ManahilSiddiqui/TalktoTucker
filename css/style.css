@@ -653,6 +653,11 @@ gallery
   top: -84px;
 }
 
+.gallery p {
+  margin: 4px;
+}
+
+
 /* ------------------------------
   Listings
 ---------------------------------*/
@@ -679,6 +684,10 @@ gallery
   background: #edcc36;
   position: relative;
   top: -84px;
+}
+
+.gallery-listings p {
+  margin: 4px;
 }
 
 
