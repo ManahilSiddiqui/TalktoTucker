@@ -1186,10 +1186,6 @@ footer .cp {
         margin-top: -140px;
       }
     
-      .gallery-listings .divider {
-           display: none;
-      }
-    
       .gallery-listings .popup-image img {
         width: 450px; /* or a specific pixel value like 200px */
         height: 300px; /* maintains aspect ratio */
@@ -1212,6 +1208,11 @@ footer .cp {
 
   /* Smaller Tablets & Large Phones (max-width: 767px) */
 @media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden; /* Blocks horizontal scrolling */
+    width: 100%; /* Ensures content fits screen width */
+  }
+
   .navbar-collapse {
       padding: 20px 0;
   }
@@ -1263,6 +1264,21 @@ footer .cp {
     margin-bottom: 20px;
     text-align: center;
   }
+
+.home-h1 {
+        display: none !important;
+    }
+
+.house-image {
+    max-width: 80%;
+    height: auto;
+}
+
+.home-value-section {
+margin-bottom: 50px;
+}
+
+
 
   .about h2 {
       margin-top: -50px;
@@ -1382,7 +1398,7 @@ footer .cp {
   }
 
   .gallery-listings {
-    margin-top: -140px;
+    margin-top: -100px;
   }
 
   .gallery-listings .popup-image img {
@@ -1409,7 +1425,7 @@ footer .cp {
 
   #testimonial {
     padding-bottom: 40px; /* Creates space before next section */
-    margin-top: -70px;
+    margin-top: -10px;
   }
 
   #testimonial .mySwiper {
