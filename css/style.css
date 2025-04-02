@@ -495,9 +495,9 @@ img {
   width: 100%;
 }
 
-.button-email, .button-contact {
+.button-email, .button-contact, .button-register {
   flex: 1;
-  padding: 12px 20px;
+  padding: 10px 13px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -506,8 +506,17 @@ img {
   border: none;
 }
 
+.button-register {
+  font-size: 13px;
+}
+
 .button-email {
   background: #1e1e1e;
+  color: white;
+}
+
+.button-register {
+  background: #1a1a1a;
   color: white;
 }
 
@@ -516,7 +525,7 @@ img {
   color: black;
 }
 
-.button-email:hover, .button-contact:hover {
+.button-email:hover, .button-contact:hover, .button-register:hover {
   transform: scale(1.05);
 }
 
