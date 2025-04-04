@@ -516,7 +516,7 @@ img {
 }
 
 .button-register {
-  background: #1a1a1a;
+  background: #1e1e1e;
   color: white;
 }
 
@@ -537,6 +537,61 @@ img {
   background: rgba(0, 0, 0, 0.5);
   margin-top: 80px;
 }
+
+.end-text {
+  
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: -20px;
+  font-size: 15px;
+}
+
+.app-download-section {
+  text-align: center;
+  padding: 1.5rem;  /* Reduced from 2rem */
+  background-color: #090909;
+  border-radius: 12px;
+  max-width: 500px;  /* Reduced from 600px */
+  margin: 0 auto;
+  border: 1px solid #090909;
+  margin-top: -50px;
+}
+
+.holding-phone {
+  width: 220px; /* Adjust based on your image */
+  height: auto;
+  align-self: center; /* Vertical alignment */
+  position: relative;
+  top: 80px;
+  left: 220px;
+}
+
+/* Button container */
+.app-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Base button styles */
+.app-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
 
 .contact-info {
   display: flex;
@@ -567,6 +622,21 @@ img {
   color: #ffffff;
 }
 
+.bio-end {
+  display: flex;
+  align-items: center;
+  font-size: 30px; 
+  color: #ffffff; /* White text */
+  text-transform: none;
+}
+
+.bio-end::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px; /* Adjusts thickness */
+  background-color: #ffffff; /* White line */
+  margin-left: 10px; /* Space between text and line */
+}
 
 /* ------------------------------
 House Value Section
@@ -624,6 +694,10 @@ House Value Section
 .search-bar .button:hover {
   background-color: #ffffff; /* White background on hover */
   transform: scale(1.05); /* Slight zoom effect */
+}
+
+.home-mobile {
+  display: none;
 }
 
 .house-image {
@@ -1230,6 +1304,8 @@ footer .cp {
       padding-bottom: 150px;
   }
 
+  
+
   .gallery .popup-image img {
     width: 100%; /* or a specific pixel value like 200px */
     height: auto; /* maintains aspect ratio */
@@ -1372,6 +1448,11 @@ margin-bottom: 50px;
       padding: 20px;
   }
 
+  .app-download-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .button-group {
       flex-direction: column;
       gap: 10px;
@@ -1381,6 +1462,21 @@ margin-bottom: 50px;
     font-size: 16px;
     margin-bottom: -80px;
     margin-top: 40px;
+}
+
+.app-download-section {
+  text-align: center;
+  padding: 1.5rem;  /* Reduced from 2rem */
+  background-color: #090909;
+  border-radius: 12px;
+  max-width: 350px;  /* Reduced from 600px */
+  margin: 0 auto;
+  border: 1px solid #090909;
+  margin-top: 30px;
+}
+
+.holding-phone {
+  display: none;
 }
 
 .gallery h2 {
@@ -1426,6 +1522,14 @@ margin-bottom: 50px;
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
+  }
+
+
+  .home-mobile {
+    display: block;
+    font-size: 15px;
+    margin-bottom: -20px;
+    margin-top: -50px;
   }
 
   .blog .container {
