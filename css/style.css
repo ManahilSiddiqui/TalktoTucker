@@ -608,6 +608,10 @@ img {
   color: #ffffff;
 }
 
+.download-mobileapp {
+  margin-top: 28px;
+}
+
 .bio-end {
   display: flex;
   align-items: center;
