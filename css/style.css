@@ -477,7 +477,7 @@ img {
   display: flex;
   gap: 15px;
   margin-top: 20px;
-  width: 135%;
+  width: 125%;
 }
 
 .button-email, .button-contact, .button-register {
@@ -485,14 +485,14 @@ img {
   padding: 10px 13px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
   transition: all 0.3s ease;
   text-align: center;
   border: none;
 }
 
 .button-register {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .button-email {
@@ -1426,8 +1426,8 @@ margin-bottom: 50px;
   }
 
   .intro {
-      padding-top: 120px;
-      padding-bottom: 120px;
+      padding-top: 80px;
+      padding-bottom: 20px;
   }
 
   .about {
@@ -1446,6 +1446,7 @@ margin-bottom: 50px;
   .button-group {
       flex-direction: column;
       gap: 10px;
+      width: 100%;
   }
 
   .home-h1 {
