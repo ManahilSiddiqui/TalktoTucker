@@ -615,9 +615,10 @@ img {
 .bio-end {
   display: flex;
   align-items: center;
-  font-size: 30px; 
-  color: #ffffff; /* White text */
+  font-size: 30px;
+  color: #ffffff;
   text-transform: none;
+  margin: 20px 0; /* Adjust spacing as needed */
 }
 
 .bio-end::after {
@@ -626,6 +627,12 @@ img {
   height: 2px; /* Adjusts thickness */
   background-color: #ffffff; /* White line */
   margin-left: 10px; /* Space between text and line */
+}
+
+.container-mobileapp {
+  max-width: 1330px; /* or whatever width you want */
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* ------------------------------
@@ -1456,7 +1463,7 @@ margin-bottom: 50px;
 }
 
 .app-buttons {
-  justify-content: flex-start; /* Align left on mobile */
+  justify-content: flex-start; 
   padding-bottom: 15px; /* Extra space for scroll hint */
 }
 
