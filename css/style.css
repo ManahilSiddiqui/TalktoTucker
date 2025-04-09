@@ -1455,16 +1455,23 @@ margin-bottom: 50px;
     margin-top: 40px;
 }
 
-.app-download-section {
-  text-align: center;
-  padding: 1.5rem;  /* Reduced from 2rem */
-  background-color: #090909;
-  border-radius: 12px;
-  max-width: 350px;  /* Reduced from 600px */
-  margin: 0 auto;
-  border: 1px solid #090909;
-  margin-top: 30px;
+.app-buttons {
+  justify-content: flex-start; /* Align left on mobile */
+  padding-bottom: 15px; /* Extra space for scroll hint */
 }
+
+.app-button {
+  min-width: 135px; /* Slightly smaller buttons on mobile */
+}
+
+.app-download-section {
+  max-width: 100%;
+  padding: 1.5rem 1rem;
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-bottom: -210px;
+}
+
 
 .holding-phone {
   display: none;
