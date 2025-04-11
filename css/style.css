@@ -1283,8 +1283,248 @@ footer .cp {
         text-align: center;
       }
 
+  }
+
+  @media (min-width: 1024px) and (max-width: 1366px) {
+
+    .social-icons {
+      margin-right: -300px;
+    }
+
+    .home-h1 {
+      margin-bottom: -90px;
+    }
+
+    .holding-phone {
+      margin-left: -120px;
+    }
+
 
   }
+
+  /* Landscape mobile */
+  @media (max-width: 932px) {
+    html, body {
+      overflow-x: hidden; /* Blocks horizontal scrolling */
+      width: 100%; /* Ensures content fits screen width */
+    }
+  
+    .intro .content-text h1 {
+      font-size: 36px !important;
+      line-height: 1.4;
+    }
+  
+    #about .about-info .contact-details p:last-child {
+      text-align: left !important;
+    }
+  
+    .bio-heading {
+      margin-top: 50px;
+    }
+  
+    #gallery .container h2 {
+      margin-top: -30px !important; /* Adjust the value as needed */
+    }
+  
+    .gallery {
+      margin-top: -90px;
+    }
+  
+    #gallery h1.home-h1 {
+      margin-top: 30px; /* Adjust this value as needed */
+    }
+  
+    .navbar-toggler {
+      margin-right: 10px;
+    }
+  
+    .navbar .navbar-collapse {
+      padding-top: 30px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+  
+    .intro {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+  
+    .home-h1 {
+      display: none;
+    }
+  
+    .about {
+        padding-top: 150px;
+    }
+  
+    .about-card {
+        padding: 20px;
+    }
+  
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+  
+    .home-h1 {
+      font-size: 16px;
+      margin-bottom: -80px;
+      margin-top: 40px;
+  }
+  
+  .app-buttons {
+    justify-content: flex-start; 
+    padding-bottom: 15px; /* Extra space for scroll hint */
+  }
+  
+  .app-button {
+    min-width: 100px;
+    margin-left: 100px;
+  }
+  
+  .app-download-section {
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-bottom: -250px;
+  }
+  
+  
+  .holding-phone {
+    display: none;
+  }
+  
+    .home-mobile {
+      display: block;
+      font-size: 15px;
+      margin-bottom: -20px;
+      margin-top: -50px;
+    }
+  
+    .blog .container {
+      margin-top: 160px;
+    }
+
+
+  }
+
+  /* Smaller Tablets & Large Phones (max-width: 767px) */
+@media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden; /* Blocks horizontal scrolling */
+    width: 100%; /* Ensures content fits screen width */
+  }
+
+  .intro .content-text h1 {
+    font-size: 36px !important;
+    line-height: 1.4;
+  }
+
+  #about .about-info .contact-details p:last-child {
+    text-align: left !important;
+  }
+
+  .bio-heading {
+    margin-top: 50px;
+  }
+
+  #gallery .container h2 {
+    margin-top: -30px !important; /* Adjust the value as needed */
+  }
+
+  .gallery {
+    margin-top: -90px;
+  }
+
+  #gallery h1.home-h1 {
+    margin-top: 30px; /* Adjust this value as needed */
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-top: 30px;
+  }
+  
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .intro {
+      padding-top: 80px;
+      padding-bottom: 50px;
+  }
+
+  .home-h1 {
+    display: none;
+  }
+
+  .about {
+      padding-top: 150px;
+  }
+
+  .about-card {
+      padding: 20px;
+  }
+
+  .button-group {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+  }
+
+  .home-h1 {
+    font-size: 16px;
+    margin-bottom: -80px;
+    margin-top: 40px;
+}
+
+.app-buttons {
+  justify-content: flex-start; 
+  padding-bottom: 15px; /* Extra space for scroll hint */
+}
+
+.app-button {
+  min-width: 100px;
+  margin-left: 100px;
+}
+
+.app-download-section {
+  max-width: 100%;
+  padding: 1.5rem 1rem;
+  margin-top: 90px;
+  margin-left: 20px;
+  margin-bottom: -250px;
+}
+
+
+.holding-phone {
+  display: none;
+}
+
+  .home-mobile {
+    display: block;
+    font-size: 15px;
+    margin-bottom: -20px;
+    margin-top: -50px;
+  }
+
+  .blog .container {
+    margin-top: 160px;
+  }
+
+
+}
+
 
   /* Smaller Tablets & Large Phones (max-width: 767px) */
 @media (max-width: 767px) {
@@ -1519,9 +1759,11 @@ margin-bottom: 50px;
 }
 
 .app-buttons {
-  justify-content: flex-start; 
+  justify-content: flex-start; /* Align left on mobile */
   padding-bottom: 15px; /* Extra space for scroll hint */
 }
+
+
 
 .app-button {
   min-width: 135px; /* Slightly smaller buttons on mobile */
@@ -1531,7 +1773,7 @@ margin-bottom: 50px;
   max-width: 100%;
   padding: 1.5rem 1rem;
   margin-top: 90px;
-  margin-left: 20px;
+  margin-right: 0px;
   margin-bottom: -210px;
 }
 
