@@ -224,8 +224,8 @@ img {
 ---------------------------------*/
 .intro {
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 130px;
+  padding-bottom: 30px;
   background-image: url('../img/intro.jpg'); /* Path to house image */
   background-size: cover;
   background-position: center;
