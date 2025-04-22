@@ -115,19 +115,21 @@ img {
   button
 ---------------------------------*/
 .button {
-  padding: 12px 30px;
-  background: #edcc36;
-  color: #090909;
+  padding: 12px 20px;
+  color: #edcc36;
+  background: #090909;
+  border-radius: 2px;
+  border: 2px;
   font-size: 13px;
   letter-spacing: 1px;
-  border-radius: 0;
-  border: 0;
   transition: 0.2s;
   font-weight: 600;
 }
 
 .button:hover {
-  background: #ffffff;
+  background: #edcc36;
+  border-radius: 20px;
+  border: 2px;
   color: #090909;
   border-color: transparent;
 }
@@ -192,7 +194,7 @@ img {
   color: #edcc36;
 }
 .navbar .navbar-nav li .button {
-  color: #ffffff;
+  color: #edcc36;
   margin-top: -3px;
   display: inline-block;
   margin-right: -15px;
