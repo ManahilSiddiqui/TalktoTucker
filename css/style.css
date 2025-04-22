@@ -224,26 +224,14 @@ img {
 ---------------------------------*/
 .intro {
   position: relative;
-  padding-top: 130px;
-  padding-bottom: 30px;
-  background-image: url('../img/intro.jpg'); /* Path to house image */
+  padding-top: 90px;
+  padding-bottom: 5px;
   background-size: cover;
+  background-color: #090909;
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff; /* White text color */
   text-align: center;
-}
-
-/* Dark overlay */
-.intro::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity (0.5 = 50% dark) */
-  z-index: 1;
 }
 
 .intro .content-text {
@@ -269,97 +257,57 @@ img {
 }
 
 /* Search Bar Styling */
-.filter {
-  margin-top: 20px;
-  padding: 20px;
-  background: rgba(26, 26, 26, 0.8); /* Semi-transparent dark background */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.filter .common-input {
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-  color: #dddddd;
-  background: #2a2a2a; /* Darker background for the input field */
-  border: 2px solid #edcc36; /* Yellow border to match the theme */
-  border-radius: 5px;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.filter .common-input::placeholder {
-  color: #777777; /* Placeholder text color */
-  opacity: 1; /* Ensure placeholder is fully visible */
-}
-
-.filter .common-input:focus {
-  border-color: #ffffff; /* White border on focus */
-}
-
-.filter .btn-main {
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  color: #090909; /* Dark text color */
-  background: #edcc36; /* Yellow background to match the theme */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.filter .btn-main:hover {
-  background: #ffffff; /* White background on hover */
-  color: #090909;
-  transform: translateY(-2px); /* Slight lift effect */
-}
-
-.filter .btn-main:active {
-  transform: translateY(0); /* Reset lift effect on click */
-}
-/* Additional Styles for Better Alignment */
-.filter .row {
+.custom-search-container {
   display: flex;
-  align-items: center; /* Vertically center the input and button */
-  gap: 10px; /* Add spacing between input and button */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 80px;
+  background-color: #090909;
+  text-align: center;
 }
 
-.filter .col-lg-8,
-.filter .col-sm-8,
-.filter .col-xs-8 {
-  flex: 1; /* Allow the input to take up remaining space */
+.custom-search-container .custom-heading {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
-.filter .col-lg-4,
-.filter .col-sm-4,
-.filter .col-xs-4 {
-  flex: 0 0 auto; /* Prevent the button from stretching */
+/* Custom Search Bar */
+.custom-search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 6px 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ------------------------------
-  Tabs Styling
----------------------------------*/
-.common-tab .nav-link {
-  color: #ffffff; /* Yellow text color */
-  background-color: transparent; /* Transparent background */
-  border: none; /* Remove border */
-  font-weight: 600; /* Bold text */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+.custom-search-bar input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  flex-grow: 1;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
 }
 
-.common-tab .nav-link.active {
-  color: #000000; /* Black text color for active tab */
-  background-color: #edcc36; /* Yellow background for active tab */
-  border-radius: 5px; /* Rounded corners for active tab */
+.custom-search-bar input::placeholder {
+  color: #999999;
 }
 
-.common-tab .nav-link:hover {
-  color: #ffffff; /* White text color on hover */
+.custom-search-bar button {
+  background: none;
+  border: none;
+  color: #090909;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 
@@ -368,7 +316,7 @@ img {
   about
 ---------------------------------*/
 .about {
-  padding-top: 150px;
+  padding-top: 90px;
 }
 
 .about-card {
@@ -381,6 +329,7 @@ img {
   max-width: 1000px;
   margin-left: 100px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
 }
 
 .about-image {
@@ -1729,16 +1678,16 @@ margin-bottom: 50px;
   }
 
   .intro {
-      padding-top: 50px;
-      padding-bottom: 1px;
+      padding-top: 10px;
+      padding-bottom: 4px;
   }
 
   .about {
-      padding-top: 80px;
+      padding-top: 20px;
   }
 
   .about-card {
-      padding: 20px;
+      padding: 5px;
   }
 
   .app-download-section {
