@@ -147,6 +147,7 @@ img {
   background-color: #090909;
   text-align: center;
 }
+
 .navbar .container {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -179,7 +180,7 @@ img {
   position: relative;
   width: 60%;
   text-align: center;
-  left: -10px;
+  left: 5%;
 }
 .navbar .navbar-nav li {
   padding: 0 10px;
