@@ -116,24 +116,18 @@ img {
 ---------------------------------*/
 .button {
   padding: 12px 20px;
-  color: #edcc36;
-  background: #090909;
-  border-radius: 2px;
+  color: #090909;
+  background: #edcc36;
+  border-radius: 20px;
   border: 2px;
   font-size: 13px;
+  box-shadow: 0 0 2px #edcc36, 0 0 5px #edcc36, 0 0 5px #fff700;
   letter-spacing: 1px;
   transition: 0.2s;
   font-weight: 600;
 }
 
-.button:hover {
-  background: #edcc36;
-  border-radius: 20px;
-  border: 2px solid transparent;
-  color: #090909;
-  box-shadow: 0 0 2px #edcc36, 0 0 10px #edcc36, 0 0 15px #fff700;
-  transition: all 0.3s ease;
-}
+
 
 /* ------------------------------
   navbar
