@@ -115,6 +115,31 @@ img {
   button
 ---------------------------------*/
 .button {
+  padding: 12px 30px;
+  background: #edcc36;
+  color: #090909;
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-radius: 0;
+  border: 0;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.button-signin {
+  padding: 12px 20px;
+  color: #090909;
+  background: #edcc36;
+  border-radius: 20px;
+  border: 2px;
+  font-size: 13px;
+  box-shadow: 0 0 2px #edcc36, 0 0 5px #edcc36, 0 0 5px #fff700;
+  letter-spacing: 1px;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.button-call {
   padding: 12px 20px;
   color: #090909;
   background: #edcc36;
