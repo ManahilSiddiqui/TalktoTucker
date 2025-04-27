@@ -133,29 +133,28 @@ img {
 }
 
 .button-signin {
-  padding: 12px 20px;
-  color: #090909;
+  padding: 8px 20px;
+  color: #000;
   background: #edcc36;
   border-radius: 20px;
-  border: 2px;
-  font-size: 13px;
-  box-shadow: 0 0 2px #edcc36, 0 0 5px #edcc36, 0 0 5px #fff700;
-  letter-spacing: 1px;
-  transition: 0.2s;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0 0 8px #edcc36;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease-in-out;
   font-weight: 600;
 }
 
 .button-call {
-  padding: 12px 20px;
-  color: #090909;
-  background: #edcc36;
-  border-radius: 20px;
-  border: 2px;
-  font-size: 13px;
-  box-shadow: 0 0 2px #edcc36, 0 0 5px #edcc36, 0 0 5px #fff700;
-  letter-spacing: 1px;
-  transition: 0.2s;
+  padding: 8px 20px;
+  color: #edcc36;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease-in-out;
   font-weight: 600;
+
 }
 
 
