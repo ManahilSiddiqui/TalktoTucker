@@ -147,10 +147,12 @@ img {
 
 .button-call {
   padding: 8px 20px;
-  color: #edcc36;
-  background: transparent;
+  color: #000;
+  background: #edcc36;
+  border-radius: 20px;
   border: none;
   font-size: 14px;
+  box-shadow: 0 0 8px #edcc36;
   letter-spacing: 0.5px;
   transition: all 0.2s ease-in-out;
   font-weight: 600;
